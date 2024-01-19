@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+.wrap{
+    width: 1100px;
+    height: 900px;
+    background: olivedrab;
+    margin: 0 auto;
+}
+.box1{background: skyblue;
+height: 100px;
+}
+.box1 h1{
+    width: 150px;
+    height: 100px;
+    /* background: pink; */
+    float: left;
+}
+.box1 h1 a{
+    /* background: yellow; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+.box1 nav{
+    float: right;
+    /* background: teal; */
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.gnb{}
+.gnb li{
+display: inline-block;
+margin-left: 10px;
+
+}
+.gnb li a{
+    display: block;
+    width: 120px; 
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: white;
+}
+.gnb li a:hover{
+    background: olivedrab;
+    font-weight: 200300;
+    color: white;
+}
+.box2{
+    height: 600px;
+    background: cadetblue;
+    position: relative;
+}
+.box2 .child1{
+    width: 400px;
+    height: 400px;
+    background: tan;
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    /* z-index: 5; */
+    /* 제트 인덱션은 부모가 달라도 
+    앱솔루트끼리의 순번을 결정한다 */
+    /* 앱솔루트는 리라이티브가 안 적혀있으면 그 위의 부모를 찾아가는데
+    아무 리라이티브를 찾아가지 않고
+    부모의 부모관계를 찾아감 */
+}
+.box2 .child2{
+    width: 500px; 
+    height: 300px;
+    background: chocolate;
+    position: absolute;
+    right: 200px;
+    bottom: 80px;
+}
+.box3{height: 200px;
+background: rgb(164, 164, 240);
+}
+.box3 > div{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+}
+.box3_1{background: yellowgreen;}
+.box3_2{background: purple;}
+.box3_3{background: orange;}
+
+.container{
+    background: red;
+    height: 300px;
+}

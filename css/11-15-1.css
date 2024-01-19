@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Vina+Sans&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'CookieRun-Regular';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul.in_block {
+    border: 1px solid black;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    /* box-sizing: border-box; */
+    text-align: center;
+}
+.in_block li{
+    border: 1px solid green;
+    display: inline-block;
+    width: calc(100% / 5 - 10px);
+}
+.in_block li a{
+    background: orange;
+    display: block;
+    padding: 5px 0;
+}
+.in_block li a:hover{
+    background : yellow;
+    color: white;
+}
+ul.float{
+    width: 80%;
+    border: 1px solid red;
+    margin: 50px auto;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+    padding: 10px;
+}
+.float li{
+    border: 1px solid pink;
+    float: left;
+    width: calc( (100% - 40px) / 5 );
+    margin-right: 10px;
+}
+.float li:last-child{
+    margin-right: 0 !important;
+    
+}
+.float li a{
+    display: block;
+    background: violet;
+    text-align: center;
+    padding: 5px 0;
+}
+.float li a:hover{
+    color: palevioletred;
+    background: olivedrab;
+}

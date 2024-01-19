@@ -1,0 +1,132 @@
+@charset "utf-8";
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.wrap{
+    margin: 10px auto;
+    /* background: skyblue; */
+    width: 980px;
+    height: 2000px;
+}
+/* herder 영역 */
+.header{
+    height: 160px;
+    border-radius: 25px;
+    background-image: url("../img/ptn.jpg");
+    /* background-image: url(/img/1.png), url(/img/ptn.jpg);
+    background-size: 300px, 200px;
+    background-repeat: no-repeat, repeat; 
+    background-position : 100% 0, left top ; */
+    border: 1px solid black;
+    position: relative;
+    /* 고양이 포지션 앱솔루트 때문에 릴리티브 걸음 */
+    overflow: hidden;
+}
+.header h1{
+ color: purple;
+ text-transform: capitalize;
+ height: 160px;
+ line-height: 160px;
+padding-left: 30px;
+}
+
+.header .cat{
+    width: 80px;
+position: absolute;
+bottom: 10px;
+right: -10px;
+}
+/* contents 영역 */
+.contnets{
+    margin: 10px 0;
+    overflow: hidden;
+    /* background: red; */
+    /* height: 500px; */
+}
+aside{
+    width: 200px;
+    background: rgb(202, 198, 198);
+    padding: 10px;
+    border-radius: 10px;
+    float: left;
+}
+aside h2{
+    background: cadetblue;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+aside ul li{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+    /* text-decoration: underline; 
+    언더라인은 글씨 만큼만 밑줄이 그어진다*/
+}
+.center{
+    width: 540px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px;
+    float: left;
+}
+.center h2{
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 200px;
+    background: pink;
+    border-radius: 50px;
+    float: right;
+    margin-bottom: 20px;
+    /* margin: 0 0 15px auto; */
+}
+.center p{clear: both;
+text-align: justify;
+line-height: 1.8;
+margin-bottom: 20px;}
+.center ul{clear: both;
+}
+.center li{
+    height: 120px;
+    background: olive;
+    text-align: center;
+    line-height: 120px;
+    float: left;
+    width: calc(100% / 3) ;
+    border: 2px solid white;
+}
+.center li a{
+    display: block;
+    height: 100%;
+}
+.center li a:hover{
+    background: greenyellow;
+    color: white;
+}
+
+/* footer 영역 */
+.footer{
+    background: rgb(202, 198, 198);
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}

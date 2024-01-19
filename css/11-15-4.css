@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 3000px;
+}
+ul, ol, li{
+    list-style: none;
+}
+
+a{
+text-decoration: none;
+color: inherit;
+}
+
+.header{
+    /* border: 1px solid blue; */
+    border-bottom: 2px solid black;
+    background: white;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 2px 3px rgb(176, 128, 223);
+    }
+.head_inner{
+    width: 1000px;
+    background: rgb(197, 230, 244);
+    margin: 20px auto;
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+.logo{
+    /* background: wheat; */
+    text-align: center;
+    padding: 20px;
+}
+.nav{
+    /* border: 1px solid brown; */
+    text-align: center ;
+    overflow: hidden;
+}
+.menu{
+height: 30px;
+line-height: 30px;
+}
+.menu li{
+    /* border: 1px solid   blue; */
+float: left;
+width: calc( (100% - 30px) / 4 );
+margin-right: 10px;
+background: #8282ce;
+color: white;
+border-radius:30px ;
+}
+.menu li:last-child{
+    margin-right: 0 !important;
+}
+.menu li a{
+    display: block;
+}
+.menu li a:hover{
+    background: pink;
+    color: #8282ce;
+    border-radius:30px ;
+    
+}
+.container{
+    width: 1000px;
+    margin: 10px auto;
+    /* background: gray; */
+}
+.visual{
+    height: 470px;
+    background-image: url("../img/visu.png");
+background-size: cover;
+text-align: right;
+color: white;
+padding: 230px 20px 0 0;
+}
+.visual h2{
+    font-size: 30px;
+    text-shadow: 5px 5px 1px gray;
+    margin-bottom: 10px;
+}
+.visual p{
+}
+.content{
+    /* background: orange; */
+    margin: 10px 0;
+    overflow: hidden;
+}
+.left{
+    height: 320px;
+background: red;
+width: 300px;
+float: left;
+padding: 30px 20px;
+}
+.sub{}
+.sub li{
+    margin-bottom: 10px;
+}
+.sub li a{
+    background: olive;
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+.sub li a:hover{
+    color: cadetblue;
+    background: white;
+}
+.right{
+    background: greenyellow;
+    width: 690px;  
+    float: right; 
+    padding: 30px 20px;
+}
+.right {
+    line-height: 1.8;
+    color: white;
+    text-align: justify;
+    height: 320px;
+}
+.content h3{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
